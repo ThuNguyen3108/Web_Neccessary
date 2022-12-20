@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/chiTietSanPham.css">
+    <title>Chi tiết sản phẩm</title>
+</head>
+
+<body>
+
+    <header class="header" id="myHeader">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col col-c-12 col-12">
+                    <nav class="header_navbar">
+                        <ul class="header_navbar-list table_header_navbar-list">
+                            <li class="header_navbar-list-item header_navbar-list-item--sepa">
+                                <a href="">Vào cửa hàng trên ứng dụng</a>
+                            </li>
+                            <li class="header_navbar-list-item">
+                                <a href="">Kết Nối</a>
+                                <i style="color: white; margin: 0px 2px" class="fab fa-facebook"></i>
+                                <i style="color: white;" class="fab fa-instagram"></i>
+                            </li>
+                        </ul>
+                        <ul class="header_navbar-list">
+                            <li class="header_navbar-list-item">
+                                <i style="color: white; margin-right: 2px" class="fas fa-bell"></i>
+                                <a href="">Thông báo</a>
+                            </li>
+                            <li class="header_navbar-list-item">
+                                <i style="color: white; margin-right: 2px" class="fas fa-question-circle"></i>
+                                <a href="">Trợ giúp</a>
+                            </li>
+    
+                            <!-- IMG -->
+                            <li id="icon_dn" class="header_navbar-list-item">
+                                <div style="position: relative;">
+                                    <img id="img_dn" class="icon_dn" src="./img/thayQuang.jpg" alt="">
+                                    <span id="img_top_icon"></span>
+                                </div>
+                            </li>
+    
+                            <li id="name_dn" class="header_navbar-list-item">
+                                <a style="color: white;font-weight: bold" id="text_dn" style="font-weight: bold">Admin</a>
+                            </li>
+    
+                            <li id="dk" class="header_navbar-list-item header_navbar-list-item--sepa">
+                                <a style="font-weight: bold;" href="./dangKy.html">Đăng ký</a>
+                            </li>
+    
+                            <li id="dn" class="header_navbar-list-item">
+                                <a style="font-weight: bold" href="./dangNhap.html">Đăng nhập</a>
+                            </li>
+    
+                            <li id="exit" class="header_navbar-list-item">
+                                <a style="color: white;font-weight: bold" style="font-weight: bold">Thoát</a>
+                            </li>
+    
+                        </ul>
+                    </nav>
+                    <div class="header_main">
+    
+                        <div class="header_logo">
+                            <img class="header_logo-img" src="./img/logo.png" alt="">
+                            <a style="color: white; text-decoration: none;" href="trangChu.html">
+                                <h3><span>Store</span><br>Nhu Yếu Phẩm</h3>
+                            </a>
+                        </div>
+                        <div class="div_nav_navigation">
+                            <nav class="nav_navigation">
+                                <!-- Thiết kế thanh điều hướng ở đây -->
+                                <a class="first" href="trangchu.html">Trang Chủ</a>
+                                <a class="first" href="gioithieu.html">Giới Thiệu</a>
+                                <a class="first" href="./thitCa.html">Sản Phẩm</a>
+                                <a class="first" href="tintuc.html">Tin Tức</a>
+                                <a class="first" href="lienhe.html">Liên hệ</a>
+                            </nav>
+                        </div>
+                        <div class="function_header">
+                            <div class="header_search">
+                                <input class="header_search-input" type="text" placeholder="Tìm kiếm sản phẩm">
+                                <button type="button" class="header_search-btn">
+                                    <i class="fa fa-search header_search-btn-icon"></i>
+                                </button>
+                            </div>
+                            <a href="./gioHang.html" class="header_cart">
+                                <div class="header_cart-wrap">
+                                    <div id="product-count" class="header_product-count">
+                                        0
+                                    </div>
+                                    <i class="fas fa-shopping-cart header_cart-icon"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header_navigation">
+                        <img class="img-animation" src="./img/xmas1562.gif" alt="">
+                    </div>
+                </div>
+            </div>
+    
+    </header>
+
+
+    <main style="font-size: 1.3rem;">
+        <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
+        <div class="container mt-4">
+            <div id="thongbao" class="alert alert-danger d-none face" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="container-fliud">
+                    <form name="frmsanphamchitiet" id="frmsanphamchitiet" method="post"
+                        action="/php/twig/frontend/giohang/themvaogiohang">
+                        <input type="hidden" name="sp_ma" id="sp_ma" value="5">
+                        <input type="hidden" name="sp_ten" id="sp_ten" value="Samsung Galaxy Tab 10.1 3G 16G">
+                        <input type="hidden" name="sp_gia" id="sp_gia" value="10990000.00">
+                        <input type="hidden" name="hinhdaidien" id="hinhdaidien" value="samsung-galaxy-tab-10.jpg">
+
+                        <div class="wrapper row">
+
+
+
+                            <div class="col-md-6">
+                                <!-- Thẻ Chứa Slideshow -->
+                                <div class="slideshow-container">
+                                    <!-- Kết hợp hình ảnh và nội dung cho mội phần tử trong slideshow-->
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">1 / 3</div>
+                                        <img width="540" height="304"
+                                            src="https://cdn.tgdd.vn/Products/Images/8783/228775/bhx/hop-10-trung-ga-tuoi-tfood-202110030004510791.jpg"
+                                            alt="Hộp 10 trứng gà tươi T.Food 10" data-type="1" data-index="0">
+
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">2 / 3</div>
+                                        <img class="owl-lazy" width="540" height="304"
+                                            data-src="https://cdn.tgdd.vn/Products/Images/8783/228775/bhx/hop-10-trung-ga-tuoi-tfood-202110030005031442.jpg"
+                                            alt="Hộp 10 trứng gà tươi T.Food 11" data-type="1" data-index="1"
+                                            src="https://cdn.tgdd.vn/Products/Images/8783/228775/bhx/hop-10-trung-ga-tuoi-tfood-202110030005031442.jpg"
+                                            style="opacity: 1;">
+
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">3 / 3</div>
+                                        <img class="owl-lazy" width="540" height="304"
+                                            data-src="https://cdn.tgdd.vn/Products/Images/8783/228775/bhx/hop-10-trung-ga-tuoi-tfood-202110030005042784.jpg"
+                                            alt="Hộp 10 trứng gà tươi T.Food 19" data-type="1" data-index="7"
+                                            src="https://cdn.tgdd.vn/Products/Images/8783/228775/bhx/hop-10-trung-ga-tuoi-tfood-202110030005042784.jpg"
+                                            style="opacity: 1;">
+
+                                    </div>
+                                    <!-- Nút điều khiển mũi tên-->
+                                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                    <a class="next" onclick="plusSlides(1)">❯</a>
+                                </div>
+                                <br>
+                                <!-- Nút tròn điều khiển slideshow-->
+                                <div style="text-align:center">
+                                    <span class="dot" onclick="currentSlide(1)"></span>
+                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="details col-md-6">
+                                <h3 class="product-title">Hộp 10 trứng gà tươi T.Food</h3>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <span class="review-no">999 reviews</span>
+                                </div>
+                                <p class="product-description">Hộp 10 trứng gà tươi của Happy Egg được đóng gói và bảo
+                                    quản theo những tiêu chuẩn nghiêm ngặt về vệ sinh và an toàn thực phẩm, đảm bảo về
+                                    chất lượng của thực phẩm. Trứng gà to tròn, đều.</p>
+                                <small class="text-muted">Giá cũ: <s><span>32.000đ</span></s></small>
+                                <h4 class="price">Giá hiện tại: <span>29.000đ</span></h4>
+                                <h4>Giảm giá: 10%</h4>
+                                <h4>Thương hiệu: Whoo Việt Nam</h4>
+
+                                <p class="vote"><strong>100%</strong> hàng <strong>Chất lượng</strong>, đảm bảo
+                                    <strong>Uy
+                                        tín</strong>!
+                                </p>
+                                <div class="form-group">
+                                    <label for="soluong" style=>Số lượng đặt mua:</label>
+                                    <input type="number" class="form-control" id="soluong" name="soluong">
+                                </div>
+                                <div style="margin-top: 10px;">
+                                    <a class="add-to-cart btn btn-default" id="btnThemVaoGioHang">Thêm vào giỏ hàng</a>
+                                    <a class="like btn btn-default" href="#"><span class="fa fa-heart"></span></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3>Hàng liên quan</h3>
+                        <hr />
+
+                        <img class="img-thumbnail" width="90" height="60"
+                            src="https://cdn.tgdd.vn/Products/Images/8783/228775/bhx/hop-10-trung-ga-tuoi-tfood-202110030004510791.jpg"
+                            alt="Hộp 10 trứng gà tươi T.Food 11">
+                        <img class="img-thumbnail" width="90" height="60"
+                            src="https://cdn.tgdd.vn/Products/Images/8783/228775/bhx/hop-10-trung-ga-tuoi-tfood-202110030005031442.jpg"
+                            alt="Hộp 10 trứng gà tươi T.Food 11">
+                        <img class="img-thumbnail" width="90" height="60"
+                            src="https://cdn.tgdd.vn/Products/Images/8783/228775/bhx/hop-10-trung-ga-tuoi-tfood-202110030005038337.jpg"
+                            alt="Hộp 10 trứng gà tươi T.Food 12">
+                        <img class="img-thumbnail" width="90" height="60"
+                            src="https://cdn.tgdd.vn/Products/Images/8783/228775/bhx/hop-10-trung-ga-tuoi-happy-egg-202110020000470519.jpg"
+                            alt="Hộp 10 trứng gà tươi T.Food 13">
+                        <img class="img-thumbnail" width="90" height="60"
+                            src="https://cdn.tgdd.vn/Products/Images/8783/228775/bhx/hop-10-trung-ga-tuoi-qlegg-202011040900368775.jpg"
+                            alt="Hộp 10 trứng gà tươi T.Food 14">
+                        <img class="img-thumbnail" width="90" height="60"
+                            src="https://cdn.tgdd.vn/Products/Images/8783/228775/bhx/hop-10-trung-ga-tuoi-qlegg-202011040900372367.jpg"
+                            alt="Hộp 10 trứng gà tươi T.Food 15">
+                        <img class="img-thumbnail" width="90" height="60"
+                            src="https://cdn.tgdd.vn/Products/Images/8783/228775/bhx/hop-10-trung-ga-tuoi-tfood-202110030005047164.jpg"
+                            alt="Hộp 10 trứng gà tươi T.Food 18">
+                        <img class="img-thumbnail" width="90" height="60"
+                            src="https://cdn.tgdd.vn/Products/Images/8783/228775/bhx/hop-10-trung-ga-tuoi-tfood-202110030005042784.jpg"
+                            alt="Hộp 10 trứng gà tươi T.Food 19">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col col-c-3 col-3">
+                    <h3 class="footer-heading">Chăm sóc khách hàng</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="#" class="footer-link">Trung Tâm Tợ Giúp</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Store Hàng Thiết Yếu</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Hướng Dẫn Mua hàng</a></li>
+                    </ul>
+                </div>
+                <div class="col col-c-3 col-3">
+                    <h3 class="footer-heading">Giới Thiệu</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="#" class="footer-link">Thông Tin</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Tuyển Dụng</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Điều Khoản</a></li>
+                    </ul>
+                </div>
+                <div class="col col-c-3 col-3">
+                    <h3 class="footer-heading">Danh Mục</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="#" class="footer-link">Thông Tin</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Tuyển Dụng</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Điều Khoản</a></li>
+                    </ul>
+                </div>
+                <div class="col col-c-3 col-3">
+                    <h3 class="footer-heading">Vào Cửa Hàng trên Ứng Dụng</h3>
+                    <div class="fotter-download">
+                        <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/f184c0b68a2d385feb5d70a76396230b.png"
+                            class="footer-download-qr">
+                        <div class="fotter-download-app">
+                            <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/2679f513b5f9e235adf2c6c288617e7b.png"
+                                class="footer-download-img">
+                            <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/759416b55e2bd69ecc360ee2faab7ad0.png"
+                                class="footer-download-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="booton-foter">
+        @ Hello have a nice day
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="./js/chiTietSanPham.js"></script>
+</body>
+
+</html>

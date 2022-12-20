@@ -1,0 +1,135 @@
+.modal {
+    position: fixed;
+    top: -100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal__body {
+    background-color: white;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+    border-radius: 5px;
+    width: 500px;
+}
+.auth-from__container {
+    padding: 0 20px;
+    font-size: 1.7rem;
+}
+.auth-from_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.auth-from_heading {
+    font-weight: 400;
+}
+.auth-from__switch-btn {
+    color: #f7450a;
+}
+.auth-form_input {
+    width: 460px;
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 8px;
+    border-radius: 2px;
+    border: 1px solid #afafaf;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.auth-from_policy-text {
+    font-size: 1.4rem;
+    font-weight: 600px;
+}
+.auth-from_policy-text-a {
+    text-decoration: none;
+    color: #f7450a;
+}
+.auth-form_control {
+    display: flex;
+    justify-content: flex-end;
+}
+.btn {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 2px;
+    border: 1px solid #afafaf;
+}
+.btn--primary {
+    padding: 5px;
+    background-color: #f7450a;
+    border: 1px solid;
+    color: white;
+    border-radius: 4px;
+}
+.auth-form_socials {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    border: 1px solid #d3d3d3;
+    background-color: #d3d3d3ee;
+}
+.btn.btn-with--icon {
+    width: 230px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding-left: 25px;
+    padding-top: 7px;
+    height: 40px;
+    align-items: center;
+    margin: 8.5px 6px;
+    cursor: pointer;
+    padding: 11px 32px;
+}
+.btn.btn-with--icon i {
+    margin-right: 8px;
+}
+.btn-color-1 {
+    background-color: #3a5998;
+    color: white;
+    border-right: none;
+}
+.btn-color-2 {
+    background-color: rgb(163, 50, 50);
+    color: white;
+}
+
+.btn-color-3 {
+    background-color: #11b50c;
+    color: white;
+}
+.auth-form_help {
+    display: flex;
+    justify-content: flex-end;
+    margin: 25px 0px;
+}
+.auth-form_help-input {
+    text-decoration: none;
+}
+.auth-form_help-input_1 {
+    color: #f7450a;
+    margin-right: 20px;
+    position: relative;
+}
+.auth-form_help-input_2 {
+    color: rgb(138, 138, 138);
+}
+.auth-form_help-input_1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background-color: #fb9086;
+    right: -12px;
+    top: 3px;
+}

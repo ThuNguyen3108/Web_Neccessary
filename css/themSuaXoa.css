@@ -1,0 +1,55 @@
+/* Thiet ke khung */
+.panel {
+    width: 60%;
+    /* Canh giữa */
+    margin: 0 auto;
+    border: solid #852d91 1px;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.panel-heading {
+    background-color: #852d91;
+    padding: 10px;
+    color: white;
+}
+
+.panel-body {
+    padding: 10px;
+}
+
+.panel-body label {
+    /* Tô đậm chữ */
+    font-weight: bold;
+}
+
+.form-group {
+    /* Xuống dòng */
+    display: block;
+    /* Thêm khoảng không gian bên ngoài thành phần */
+    margin-bottom: 20px;
+}
+
+.form-control {
+    display: block;
+    width: 98%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.table {
+    /* Độ rộng */
+    width: 100%;
+}
+
+.table tr {
+    border-bottom: solid #852d91 1px;
+}
+.btn-warning {
+    background-color: rgb(235, 235, 36);
+    border: 1;
+}
+.btn-danger {
+    background-color: rgb(207, 21, 21);
+    border: 1;
+}
